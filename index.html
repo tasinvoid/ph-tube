@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ph-Tube</title>
+    <!-- daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="w-11/12 mx-auto flex justify-between border-b-2 p-5 items-center border-gray-400"
+      >
+        <div class="logo"><img class="w-[120px]" src="/Logo.png" alt="" /></div>
+        <div class="sort"><button class="btn">Sort by View</button></div>
+        <div class="blogs">
+          <button class="btn bg-[#FF1F3D] text-white">Blogs</button>
+        </div>
+      </nav>
+      <nav id="category-container" class="flex py-5 justify-center gap-5">
+        <button class="btn btn-sm hover:bg-[#FF1F3D] hover:text-white">
+          All
+        </button>
+      </nav>
+    </header>
+    <section
+      id="video-container"
+      class="w-11/12 mx-auto grid grid-cols-4 justify-center"
+    ></section>
+    <script src="js.js"></script>
+  </body>
+</html>
